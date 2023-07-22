@@ -48,9 +48,9 @@ class MainActivity : AppCompatActivity() {
         val decimal = mSharedPreferences.getFloat("miDecimal", 0.0f)
         val boleano = mSharedPreferences.getBoolean("miBoleano", false)
 
-        binding.textViewTexto.text = texto
-        binding.textViewrEntero.text = entero.toString()
-        binding.textViewDecimal.text = decimal.toString()
+        binding.textViewTexto.text = "El texto es: " + texto
+        binding.textViewrEntero.text = "El Nro es: " + entero.toString()
+        binding.textViewDecimal.text = "El Nro es: " + decimal.toString()
         binding.textViewSwitch.text = boleano.toString()
         binding.switchFragmen.isChecked = boleano
 
@@ -63,10 +63,10 @@ class MainActivity : AppCompatActivity() {
         binding.textViewSwitch.text = ""
 
         binding.editTextTexto.text.clear()
-        binding.editTextNumEntero.text
-        binding.editTextNumberDecimal.text
+        binding.editTextNumEntero.text.clear()
+        binding.editTextNumberDecimal.text.clear()
         binding.switchFragmen.isChecked = false
-        mSharedPreferences.edit().clear()
+        mSharedPreferences.edit().clear().apply()
 
     }
 
