@@ -23,7 +23,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <TextView
-        android:id="@+id/textViewrResultEnt"
+        android:id="@+id/textViewrEntero"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -44,7 +44,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewrResultEnt"
+        app:layout_constraintTop_toBottomOf="@+id/textViewrEntero"
         android:autofillHints=""
         tools:ignore="VisualLintTextFieldSize" />
 
@@ -60,17 +60,17 @@
 
     <Switch
         android:id="@+id/switchFragmen"
-        android:layout_width="318dp"
+        android:layout_width="272dp"
         android:layout_height="49dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:minHeight="48dp"
         android:text="@string/hello_first_fragment"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTexto"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        tools:ignore="UseSwitchCompatOrMaterialXml,TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
@@ -89,7 +89,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewDecimal"
         android:layout_width="204dp"
         android:layout_height="37dp"
         android:layout_marginTop="10dp"
@@ -107,7 +107,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/borrar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDecimal" />
 
     <Button
         android:id="@+id/buttonGUARDAR"
@@ -119,4 +119,27 @@
         app:layout_constraintStart_toEndOf="@+id/buttonBorrar"
         app:layout_constraintTop_toTopOf="@+id/buttonBorrar"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mostrar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGUARDAR"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/buttonBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBorrar" />
+
+    <TextView
+        android:id="@+id/textViewSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/textview4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchFragmen"
+        app:layout_constraintStart_toEndOf="@+id/switchFragmen"
+        app:layout_constraintTop_toTopOf="@+id/switchFragmen"
+        app:layout_constraintVertical_bias="0.411" />
 </androidx.constraintlayout.widget.ConstraintLayout>
